@@ -1,0 +1,23 @@
+
+const fs = require('fs');
+
+// Tao file va ghi thong tin
+fs.writeFileSync('thongtin.txt',
+    'Ho ten: Ha Van Sam\nMa sinh vien: CD-CNTT18A24\n'
+);
+
+// Doc noi dung file
+console.log('Thong tin ban dau:');
+console.log(fs.readFileSync('thongtin.txt', 'utf8'));
+
+// Ghi noi ten lop bang appendFile()
+fs.appendFile('thongtin.txt', 'Lop: CNTT18A\n', (err) => {
+    if (err) throw err;
+
+    console.log('Da ghi them ten lop!');
+
+    // Doc lai file sau khi cap nhat
+    console.log('Thong tin sau khi cap nhat:');
+    console.log(fs.readFileSync('thongtin.txt', 'utf8'));
+});
+
