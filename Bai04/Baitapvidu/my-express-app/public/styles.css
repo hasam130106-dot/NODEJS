@@ -1,0 +1,96 @@
+
+/* Thiết lập giao diện chung cho trang web */
+body {
+  /* Sử dụng font chữ Arial */
+  font-family: Arial, sans-serif;
+
+  /* Căn giữa nội dung */
+  text-align: center;
+}
+
+/* Trang trí biểu mẫu */
+form {
+  /* Hiển thị biểu mẫu dạng khối nội tuyến */
+  display: inline-block;
+
+  /* Căn nội dung bên trong về bên trái */
+  text-align: left;
+
+  /* Tạo khoảng cách bên ngoài */
+  margin: 20px;
+
+  /* Tạo khoảng cách bên trong */
+  padding: 10px;
+
+  /* Tạo đường viền màu xám */
+  border: 1px solid #ccc;
+
+  /* Bo tròn góc */
+  border-radius: 5px;
+}
+
+/* Trang trí nhãn */
+label {
+  /* Hiển thị nhãn thành từng dòng */
+  display: block;
+
+  /* Tạo khoảng cách trên dưới */
+  margin: 10px 0;
+}
+
+/* Trang trí ô nhập số */
+input[type="number"] {
+  /* Chiều rộng ô nhập */
+  width: 100%;
+
+  /* Khoảng cách bên trong */
+  padding: 5px;
+
+  /* Khoảng cách bên ngoài */
+  margin: 5px 0;
+}
+
+/* Trang trí danh sách chọn phép toán */
+select {
+  /* Chiều rộng danh sách */
+  width: 100%;
+
+  /* Khoảng cách bên trong */
+  padding: 5px;
+
+  /* Khoảng cách bên ngoài */
+  margin: 5px 0;
+}
+
+/* Trang trí nút Calculate */
+input[type="submit"] {
+  /* Màu nền xanh */
+  background-color: #007bff;
+
+  /* Màu chữ trắng */
+  color: white;
+
+  /* Xóa đường viền */
+  border: none;
+
+  /* Khoảng cách bên trong */
+  padding: 10px 20px;
+
+  /* Bo tròn góc */
+  border-radius: 5px;
+
+  /* Đổi con trỏ khi di chuột */
+  cursor: pointer;
+}
+
+/* Trang trí phần hiển thị kết quả */
+h2 {
+  /* Khoảng cách phía trên */
+  margin-top: 20px;
+
+  /* Kích thước chữ */
+  font-size: 24px;
+
+  /* Màu chữ xanh */
+  color: #007bff;
+}

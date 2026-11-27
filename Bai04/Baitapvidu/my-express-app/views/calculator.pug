@@ -1,0 +1,45 @@
+
+// Khai báo loại tài liệu HTML
+doctype html
+html
+  head
+    // Tiêu đề trang web
+    title Calculator App
+
+    // Liên kết file CSS để trang trí giao diện
+    link(rel="stylesheet" href="/styles.css")
+
+  body
+    // Tiêu đề chính của ứng dụng
+    h1 Calculator
+
+    // Tạo biểu mẫu gửi dữ liệu đến route /calculator/calculate bằng phương thức POST
+    form(action="/calculator/calculate" method="post")
+
+      // Nhãn và ô nhập số thứ nhất
+      label(for="num1") Enter number 1:
+      input(type="number" name="num1" required)
+      br
+
+      // Nhãn và ô nhập số thứ hai
+      label(for="num2") Enter number 2:
+      input(type="number" name="num2" required)
+      br
+
+      // Nhãn chọn phép toán
+      label(for="operation") Select operation:
+
+      // Tạo danh sách các phép toán
+      select(name="operation" required)
+        option(value="add") Add
+        option(value="subtract") Subtract
+        option(value="multiply") Multiply
+        option(value="divide") Divide
+      br
+
+      // Nút gửi dữ liệu để tính toán
+      input(type="submit" value="Calculate")
+
+    // Nếu có kết quả thì hiển thị kết quả
+    if result
+      h2 Result: #{result}
